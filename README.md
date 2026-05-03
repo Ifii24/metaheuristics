@@ -96,14 +96,6 @@ Both destroy and repair operators have independent probability and reward vector
 
 ---
 
-## Assignment 6 — SOP Final Submission
-
-**Problem:** Sequential Ordering Problem, final graded submission.
-
-**Implementation:** Tabu Search combining systematic and random neighbourhood search. Builds an initial feasible route with a greedy construction heuristic respecting precedence. Iterates between full exhaustive swap search (checking all i,j pairs) and random swap search (for diversification when stuck for >100 iterations without improvement). All visited solutions are stored in a tabu set to avoid revisiting. Best solution found within the time limit is written to the output file.
-
----
-
 ## Requirements
 
 ```julia
