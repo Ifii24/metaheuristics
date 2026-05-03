@@ -4,7 +4,7 @@
 ![Course](https://img.shields.io/badge/DTU-Metaheuristics-blue?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen?style=for-the-badge)
 
-Semester assignments implementing classical metaheuristic algorithms in Julia. Each assignment targets a different combinatorial optimisation problem, progressively building from construction heuristics to adaptive search.
+Semester assignments implementing classical metaheuristic algorithms in Julia. Each assignment targets a different combinatorial optimisation problem.
 
 ---
 
