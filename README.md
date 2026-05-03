@@ -17,7 +17,7 @@ Semester assignments implementing classical metaheuristic algorithms in Julia. E
 | [3 — Cloud Computing](#assignment-3--flexible-job-shop) | Flexible job-shop scheduling | Simulated Annealing with reheating |
 | [4 — SOP Tabu](#assignment-4--sequential-ordering-with-tabu-search) | Sequential Ordering Problem | Tabu Search with diversification |
 | [5 — TSP LNS/ALNS](#assignment-5--travelling-salesman-lnsalns) | Travelling Salesman Problem | LNS and Adaptive LNS |
-| [6 — SOP Final](#assignment-6--sop-final-submission) | Sequential Ordering Problem | Tabu Search (final submission) |
+
 
 All scripts accept three command-line arguments: `instance_file`, `solution_file`, `time_limit_seconds`.
 
