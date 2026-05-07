@@ -93,44 +93,6 @@ julia assignment3/s222569.jl instance.txt solution.txt 60
 ```bash
 julia assignment4/s222569.jl instance.sop solution.sol 60
 ```
-
----
-
-### Assignment 5 — TSP: LNS and ALNS
-
-Three progressively more sophisticated implementations. The core idea: instead of small local moves, **destroy** a chunk of the solution and **repair** it — allowing larger jumps through the search space. All start from a nearest-neighbour construction heuristic.
-
-#### Ex1 — Basic LNS
-1. Remove 2–30% of cities at random.
-2. Re-insert greedily: at each step, insert the city whose best position gives the lowest cost increase.
-3. Accept only improvements.
-
-```bash
-julia assignment5/Ex1_LNS_TSP.jl
-```
-
-#### Ex2 — ALNS (two destroy operators)
-Extends Ex1 with **adaptive operator selection** between two destroy methods:
-- `d1` — random removal
-- `d2` — remove K seed cities plus their L nearest neighbours (clustered removal)
-
-Each operator has a reward score updated based on solution quality. Better-performing operators are selected more often. Adds a **Simulated Annealing acceptance** criterion so non-improving solutions can occasionally be accepted.
-
-```bash
-julia assignment5/Ex2_ALNS_TSP.jl
-```
-
-#### Ex3 — Full ALNS (two destroy + two repair operators)
-Extends Ex2 with a second repair operator:
-- `r1` — greedy best insertion (same as Ex1/Ex2)
-- `r2` — regret insertion: insert the city for which the gap between its best and second-best position is largest — prioritises cities that are hardest to place later
-
-Both destroy and repair operators have independent reward and probability vectors, updated separately each iteration.
-
-```bash
-julia assignment5/Ex3_ALNS_full.jl
-```
-
 ---
 
 
