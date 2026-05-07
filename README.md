@@ -133,21 +133,6 @@ julia assignment5/Ex3_ALNS_full.jl
 
 ---
 
-### Assignment 6 — SOP: Tabu Search (Final Submission)
-
-Same problem as Assignments 1 and 4. Combines systematic and random neighbourhood search within a tabu framework.
-
-**Steps:**
-1. **Construction** — greedy nearest-neighbour heuristic respecting precedence.
-2. **Systematic search** — exhaustively check all swap pairs `(i, j)`, skipping infeasible ones. All visited solutions stored in a tabu set to avoid revisiting.
-3. **Random search** — if stuck for 100 iterations, switch to random swap search for diversification.
-4. Keep the best solution found within the time limit.
-
-```bash
-julia assignment6/s222569.jl instance.sop solution.sol 60
-```
-
----
 
 ## Requirements
 
